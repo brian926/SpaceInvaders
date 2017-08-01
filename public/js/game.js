@@ -1,14 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Space Invaders</title>
-
-	<script src="js/helpers.js"></script>
-	<link rel="stylesheet" href="res/stylesheet.css">
-</head>
-	<body>
-	<script>
 		var screen, input, frames, spFrame, lvFrame;
 		var alSprite, taSprite, ciSprite;
 		var aliens, dir, tank, bullets, cities;
@@ -148,6 +137,7 @@
 						continue;
 					}
 				}
+
 				for (var j = 0, len2 = aliens.length; j < len2; j++) {
 					var a = aliens[j];
 					if (AABBIntersect(b.x, b.y, b.width, b.height, a.x, a.y, a.w, a.h)) {
@@ -235,6 +225,3 @@
 		};
 
 		main();
-	</script>
-	</body>
-</html>
